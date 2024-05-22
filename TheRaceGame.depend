@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1716367634 source:c:\users\admin\documents\forcodeblock\day nhe\newgame\proj11\theracegame\main.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<stdio.h>
+	<SDL_mixer.h>
+	<iostream>
+	<string>
+	<vector>
+
