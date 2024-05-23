@@ -77,7 +77,6 @@ public:
     bool loadFromFile(string path);
     void render( int x, int y, SDL_Rect* clip = NULL );
     bool handleEventMouseButton(SDL_Event& e);
-
 private:
     SDL_Texture* mStartScene;
     SDL_Texture* mStartButton;
@@ -85,7 +84,6 @@ private:
     int positionY_but;
     int dm_width;
     int dm_height;
-
 };
 startScene::startScene() : mStartScene(nullptr), mStartButton(nullptr) {}
 startScene::~startScene() {
@@ -123,10 +121,8 @@ public:
 private:
     SDL_Texture* mEndScene;
     SDL_Texture* mPlayAgainButton;
-    //may need
     int positionX_but_E;
     int positionY_but_E;
-    //dimensions
     int dmE_width;
     int dmE_height;
 };
@@ -672,4 +668,4 @@ int main( int argc, char* args[] ) {
 	close();
 	return 0;
 }
-//END_GAME 681
+//END_GAME 672
