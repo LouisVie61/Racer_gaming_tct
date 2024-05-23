@@ -20,7 +20,6 @@ const int MAX_SPEED                       =            6;
 const int MIN_SPEED                       =            2;
 const int NUM_LANE_SIZE                   =            3;
 int POS_OPP_CAR_BEGIN_X                   =          900;
-const int MIN_DISTANCE_BETWEEN_OP_CARS    =          160;
 bool car_crashed = false;
 int crashX, crashY;
 
@@ -28,7 +27,6 @@ class LTexture {
 	public:
 		LTexture();
 		~LTexture();
-		bool loadMedia();
 		bool loadFromFile(string path );
 		void free();
 		void render( int x, int y, SDL_Rect* clip = NULL );
