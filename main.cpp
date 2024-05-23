@@ -68,7 +68,6 @@ private:
 };
 opposite_car_struct op_car[MAX_SIZE_OP_CAR];
 int LANE_Y[NUM_LANE_SIZE] = {120, 240, 360};
-vector<int> active_pos;
 //28/03/2024
 class startScene {
 public:
@@ -82,10 +81,8 @@ public:
 private:
     SDL_Texture* mStartScene;
     SDL_Texture* mStartButton;
-    //may need
     int positionX_but;
     int positionY_but;
-    //dimensions
     int dm_width;
     int dm_height;
 
@@ -324,7 +321,6 @@ bool opposite_car_struct::loadFromFile( string path ){
 }
 //update 19/3/2024
 //logic opposite car, this also has been in the loadMedia215
-//Base Function
 void opposite_car_struct::update(){
     if (active) {
         pos_x -= speed;
@@ -508,6 +504,7 @@ int opposite_car_struct::getWidth_OP(){
 int opposite_car_struct::getHeight_OP(){
     return dimension_height;
 }
+//the position
 int opposite_car_struct::getX(){
     return pos_x;
 }
